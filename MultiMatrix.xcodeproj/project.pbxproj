@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		1FE981C21E8EC40500F782BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE981C11E8EC40500F782BB /* AppDelegate.swift */; };
-		1FE981C41E8EC40500F782BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE981C31E8EC40500F782BB /* ViewController.swift */; };
 		1FE981C71E8EC40500F782BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981C51E8EC40500F782BB /* Main.storyboard */; };
 		1FE981C91E8EC40500F782BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981C81E8EC40500F782BB /* Assets.xcassets */; };
 		1FE981CC1E8EC40500F782BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981CA1E8EC40500F782BB /* LaunchScreen.storyboard */; };
+		1FE981D51E8EC6D100F782BB /* MatrixDimensionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE981D31E8EC6D100F782BB /* MatrixDimensionsTableViewController.swift */; };
+		1FE981D61E8EC6D100F782BB /* MatrixDimensionsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981D41E8EC6D100F782BB /* MatrixDimensionsTableViewController.xib */; };
+		1FE981DD1E8EC75500F782BB /* MatrixCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE981DB1E8EC75500F782BB /* MatrixCountViewController.swift */; };
+		1FE981DE1E8EC75500F782BB /* MatrixCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981DC1E8EC75500F782BB /* MatrixCountViewController.xib */; };
+		1FE981E41E8ED18600F782BB /* MatrixTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE981E21E8ED18600F782BB /* MatrixTableViewCell.swift */; };
+		1FE981E51E8ED18600F782BB /* MatrixTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981E31E8ED18600F782BB /* MatrixTableViewCell.xib */; };
+		1FE981E71E8EDA4200F782BB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981E61E8EDA4200F782BB /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1FE981BE1E8EC40500F782BB /* MultiMatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiMatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE981C11E8EC40500F782BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FE981C31E8EC40500F782BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FE981C61E8EC40500F782BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FE981C81E8EC40500F782BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FE981CB1E8EC40500F782BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FE981CD1E8EC40500F782BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE981D31E8EC6D100F782BB /* MatrixDimensionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixDimensionsTableViewController.swift; sourceTree = "<group>"; };
+		1FE981D41E8EC6D100F782BB /* MatrixDimensionsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatrixDimensionsTableViewController.xib; sourceTree = "<group>"; };
+		1FE981DB1E8EC75500F782BB /* MatrixCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixCountViewController.swift; sourceTree = "<group>"; };
+		1FE981DC1E8EC75500F782BB /* MatrixCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatrixCountViewController.xib; sourceTree = "<group>"; };
+		1FE981E21E8ED18600F782BB /* MatrixTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixTableViewCell.swift; sourceTree = "<group>"; };
+		1FE981E31E8ED18600F782BB /* MatrixTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatrixTableViewCell.xib; sourceTree = "<group>"; };
+		1FE981E61E8EDA4200F782BB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,7 @@
 		1FE981B51E8EC40500F782BB = {
 			isa = PBXGroup;
 			children = (
+				1FE981E61E8EDA4200F782BB /* Podfile */,
 				1FE981C01E8EC40500F782BB /* MultiMatrix */,
 				1FE981BF1E8EC40500F782BB /* Products */,
 			);
@@ -55,13 +68,42 @@
 			isa = PBXGroup;
 			children = (
 				1FE981C11E8EC40500F782BB /* AppDelegate.swift */,
-				1FE981C31E8EC40500F782BB /* ViewController.swift */,
+				1FE981DF1E8ED13F00F782BB /* Controllers */,
 				1FE981C51E8EC40500F782BB /* Main.storyboard */,
 				1FE981C81E8EC40500F782BB /* Assets.xcassets */,
 				1FE981CA1E8EC40500F782BB /* LaunchScreen.storyboard */,
 				1FE981CD1E8EC40500F782BB /* Info.plist */,
 			);
 			path = MultiMatrix;
+			sourceTree = "<group>";
+		};
+		1FE981DF1E8ED13F00F782BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1FE981E01E8ED14C00F782BB /* MatrixCountViewController */,
+				1FE981E11E8ED15800F782BB /* MatrixDimensionsTableViewController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1FE981E01E8ED14C00F782BB /* MatrixCountViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FE981DB1E8EC75500F782BB /* MatrixCountViewController.swift */,
+				1FE981DC1E8EC75500F782BB /* MatrixCountViewController.xib */,
+			);
+			name = MatrixCountViewController;
+			sourceTree = "<group>";
+		};
+		1FE981E11E8ED15800F782BB /* MatrixDimensionsTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FE981D31E8EC6D100F782BB /* MatrixDimensionsTableViewController.swift */,
+				1FE981D41E8EC6D100F782BB /* MatrixDimensionsTableViewController.xib */,
+				1FE981E21E8ED18600F782BB /* MatrixTableViewCell.swift */,
+				1FE981E31E8ED18600F782BB /* MatrixTableViewCell.xib */,
+			);
+			name = MatrixDimensionsTableViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE981CC1E8EC40500F782BB /* LaunchScreen.storyboard in Resources */,
+				1FE981D61E8EC6D100F782BB /* MatrixDimensionsTableViewController.xib in Resources */,
+				1FE981DE1E8EC75500F782BB /* MatrixCountViewController.xib in Resources */,
 				1FE981C91E8EC40500F782BB /* Assets.xcassets in Resources */,
+				1FE981E51E8ED18600F782BB /* MatrixTableViewCell.xib in Resources */,
+				1FE981E71E8EDA4200F782BB /* Podfile in Resources */,
 				1FE981C71E8EC40500F782BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE981C41E8EC40500F782BB /* ViewController.swift in Sources */,
+				1FE981E41E8ED18600F782BB /* MatrixTableViewCell.swift in Sources */,
 				1FE981C21E8EC40500F782BB /* AppDelegate.swift in Sources */,
+				1FE981D51E8EC6D100F782BB /* MatrixDimensionsTableViewController.swift in Sources */,
+				1FE981DD1E8EC75500F782BB /* MatrixCountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
