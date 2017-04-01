@@ -20,7 +20,8 @@ class MatrixCountViewController: UIViewController {
         picker.delegate = self
         picker.dataSource = self
         
-        picker.selectRow(4, inComponent: 0, animated: false)
+        picker.selectRow(3, inComponent: 0, animated: false)
+    
     }
 
     @IBAction func onNext(_ sender: Any) {

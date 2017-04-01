@@ -12,7 +12,6 @@
         <!--Navigation Controller-->
         <scene sceneID="obx-UI-9ch">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jMw-D4-vcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="WAH-VW-J56" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CGO-ux-xoy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -22,14 +21,15 @@
                         <segue destination="v1f-vd-Wxz" kind="relationship" relationship="rootViewController" id="4aB-b7-ol7"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMw-D4-vcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-89" y="859"/>
         </scene>
-        <!--Matrix Count View Controller-->
+        <!--Количество-->
         <scene sceneID="FU8-d3-jZP">
             <objects>
                 <viewController id="v1f-vd-Wxz" customClass="MatrixCountViewController" customModule="MultiMatrix" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Ivf-CW-LBn"/>
+                    <navigationItem key="navigationItem" title="Количество" id="KJy-7k-I59"/>
                     <connections>
                         <segue destination="x55-Ot-Elq" kind="show" identifier="toMatrixDimensions" id="TM2-gh-3xh"/>
                     </connections>
@@ -38,13 +38,29 @@
             </objects>
             <point key="canvasLocation" x="799" y="859"/>
         </scene>
-        <!--Matrix Dimensions Table View Controller-->
+        <!--Размерности-->
         <scene sceneID="L3A-6s-LM5">
             <objects>
-                <viewController id="x55-Ot-Elq" customClass="MatrixDimensionsTableViewController" customModule="MultiMatrix" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="x55-Ot-Elq" customClass="MatrixDimensionsTableViewController" customModule="MultiMatrix" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Размерности" id="cFd-A7-TZI">
+                        <barButtonItem key="rightBarButtonItem" title="Готово" style="plain" id="5DS-NI-O2S">
+                            <connections>
+                                <segue destination="3N8-jC-b3W" kind="show" identifier="toResults" id="5c3-lw-bMQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBl-dx-veY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1646" y="859"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="Qhd-RQ-il4">
+            <objects>
+                <viewController id="3N8-jC-b3W" customClass="ResultsViewController" customModule="MultiMatrix" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKk-cn-9pd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2510" y="859"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F666C791E8F966900FB3975 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F666C781E8F966900FB3975 /* Matrix.swift */; };
+		1F666C7C1E8FA96200FB3975 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F666C7A1E8FA96200FB3975 /* ResultsViewController.swift */; };
+		1F666C7D1E8FA96200FB3975 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F666C7B1E8FA96200FB3975 /* ResultsViewController.xib */; };
 		1FE981C21E8EC40500F782BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE981C11E8EC40500F782BB /* AppDelegate.swift */; };
 		1FE981C71E8EC40500F782BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981C51E8EC40500F782BB /* Main.storyboard */; };
 		1FE981C91E8EC40500F782BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981C81E8EC40500F782BB /* Assets.xcassets */; };
@@ -17,10 +20,13 @@
 		1FE981DE1E8EC75500F782BB /* MatrixCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981DC1E8EC75500F782BB /* MatrixCountViewController.xib */; };
 		1FE981E41E8ED18600F782BB /* MatrixTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE981E21E8ED18600F782BB /* MatrixTableViewCell.swift */; };
 		1FE981E51E8ED18600F782BB /* MatrixTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981E31E8ED18600F782BB /* MatrixTableViewCell.xib */; };
-		1FE981E71E8EDA4200F782BB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981E61E8EDA4200F782BB /* Podfile */; };
+		E03E6638975E072D7F54EFA8 /* Pods_MultiMatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3562A9D20B8764D66F254092 /* Pods_MultiMatrix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F666C781E8F966900FB3975 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		1F666C7A1E8FA96200FB3975 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		1F666C7B1E8FA96200FB3975 /* ResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
 		1FE981BE1E8EC40500F782BB /* MultiMatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiMatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE981C11E8EC40500F782BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FE981C61E8EC40500F782BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,7 +39,9 @@
 		1FE981DC1E8EC75500F782BB /* MatrixCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatrixCountViewController.xib; sourceTree = "<group>"; };
 		1FE981E21E8ED18600F782BB /* MatrixTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixTableViewCell.swift; sourceTree = "<group>"; };
 		1FE981E31E8ED18600F782BB /* MatrixTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatrixTableViewCell.xib; sourceTree = "<group>"; };
-		1FE981E61E8EDA4200F782BB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		27DD5AE6AC226E486FE65C95 /* Pods-MultiMatrix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiMatrix.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiMatrix/Pods-MultiMatrix.release.xcconfig"; sourceTree = "<group>"; };
+		3562A9D20B8764D66F254092 /* Pods_MultiMatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiMatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7AB6CB43757EF3E5FF3344 /* Pods-MultiMatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiMatrix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiMatrix/Pods-MultiMatrix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,18 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E03E6638975E072D7F54EFA8 /* Pods_MultiMatrix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F666C771E8F965000FB3975 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1F666C781E8F966900FB3975 /* Matrix.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		1FAECF711E8F6F0600921E97 /* ResultsVieController */ = {
+			isa = PBXGroup;
+			children = (
+				1F666C7A1E8FA96200FB3975 /* ResultsViewController.swift */,
+				1F666C7B1E8FA96200FB3975 /* ResultsViewController.xib */,
+			);
+			name = ResultsVieController;
+			sourceTree = "<group>";
+		};
 		1FE981B51E8EC40500F782BB = {
 			isa = PBXGroup;
 			children = (
-				1FE981E61E8EDA4200F782BB /* Podfile */,
 				1FE981C01E8EC40500F782BB /* MultiMatrix */,
 				1FE981BF1E8EC40500F782BB /* Products */,
+				509F80EEE5B48D1CDD0FF156 /* Pods */,
+				2AE99F1968BD9D8F5EB41160 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +94,7 @@
 		1FE981C01E8EC40500F782BB /* MultiMatrix */ = {
 			isa = PBXGroup;
 			children = (
+				1F666C771E8F965000FB3975 /* Service */,
 				1FE981C11E8EC40500F782BB /* AppDelegate.swift */,
 				1FE981DF1E8ED13F00F782BB /* Controllers */,
 				1FE981C51E8EC40500F782BB /* Main.storyboard */,
@@ -80,6 +108,7 @@
 		1FE981DF1E8ED13F00F782BB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1FAECF711E8F6F0600921E97 /* ResultsVieController */,
 				1FE981E01E8ED14C00F782BB /* MatrixCountViewController */,
 				1FE981E11E8ED15800F782BB /* MatrixDimensionsTableViewController */,
 			);
@@ -106,6 +135,23 @@
 			name = MatrixDimensionsTableViewController;
 			sourceTree = "<group>";
 		};
+		2AE99F1968BD9D8F5EB41160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3562A9D20B8764D66F254092 /* Pods_MultiMatrix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		509F80EEE5B48D1CDD0FF156 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B7AB6CB43757EF3E5FF3344 /* Pods-MultiMatrix.debug.xcconfig */,
+				27DD5AE6AC226E486FE65C95 /* Pods-MultiMatrix.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FE981D01E8EC40500F782BB /* Build configuration list for PBXNativeTarget "MultiMatrix" */;
 			buildPhases = (
+				BCE9DE5D32493E2C0874007B /* [CP] Check Pods Manifest.lock */,
 				1FE981BA1E8EC40500F782BB /* Sources */,
 				1FE981BB1E8EC40500F782BB /* Frameworks */,
 				1FE981BC1E8EC40500F782BB /* Resources */,
+				4AA90CF6C2ABEA8E4D15A1D4 /* [CP] Embed Pods Frameworks */,
+				30F7F1D39C7B8E2A833D08C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +188,7 @@
 					1FE981BD1E8EC40500F782BB = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Z5R2JEMGS2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -169,14 +219,62 @@
 				1FE981CC1E8EC40500F782BB /* LaunchScreen.storyboard in Resources */,
 				1FE981D61E8EC6D100F782BB /* MatrixDimensionsTableViewController.xib in Resources */,
 				1FE981DE1E8EC75500F782BB /* MatrixCountViewController.xib in Resources */,
+				1F666C7D1E8FA96200FB3975 /* ResultsViewController.xib in Resources */,
 				1FE981C91E8EC40500F782BB /* Assets.xcassets in Resources */,
 				1FE981E51E8ED18600F782BB /* MatrixTableViewCell.xib in Resources */,
-				1FE981E71E8EDA4200F782BB /* Podfile in Resources */,
 				1FE981C71E8EC40500F782BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30F7F1D39C7B8E2A833D08C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiMatrix/Pods-MultiMatrix-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AA90CF6C2ABEA8E4D15A1D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiMatrix/Pods-MultiMatrix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCE9DE5D32493E2C0874007B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FE981BA1E8EC40500F782BB /* Sources */ = {
@@ -185,8 +283,10 @@
 			files = (
 				1FE981E41E8ED18600F782BB /* MatrixTableViewCell.swift in Sources */,
 				1FE981C21E8EC40500F782BB /* AppDelegate.swift in Sources */,
+				1F666C791E8F966900FB3975 /* Matrix.swift in Sources */,
 				1FE981D51E8EC6D100F782BB /* MatrixDimensionsTableViewController.swift in Sources */,
 				1FE981DD1E8EC75500F782BB /* MatrixCountViewController.swift in Sources */,
+				1F666C7C1E8FA96200FB3975 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +405,7 @@
 		};
 		1FE981D11E8EC40500F782BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7AB6CB43757EF3E5FF3344 /* Pods-MultiMatrix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z5R2JEMGS2;
@@ -318,6 +419,7 @@
 		};
 		1FE981D21E8EC40500F782BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27DD5AE6AC226E486FE65C95 /* Pods-MultiMatrix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z5R2JEMGS2;
@@ -348,6 +450,7 @@
 				1FE981D21E8EC40500F782BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
