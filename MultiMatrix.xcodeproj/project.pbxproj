@@ -20,7 +20,6 @@
 		1FE981DE1E8EC75500F782BB /* MatrixCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981DC1E8EC75500F782BB /* MatrixCountViewController.xib */; };
 		1FE981E41E8ED18600F782BB /* MatrixTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE981E21E8ED18600F782BB /* MatrixTableViewCell.swift */; };
 		1FE981E51E8ED18600F782BB /* MatrixTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE981E31E8ED18600F782BB /* MatrixTableViewCell.xib */; };
-		E03E6638975E072D7F54EFA8 /* Pods_MultiMatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3562A9D20B8764D66F254092 /* Pods_MultiMatrix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +38,6 @@
 		1FE981DC1E8EC75500F782BB /* MatrixCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatrixCountViewController.xib; sourceTree = "<group>"; };
 		1FE981E21E8ED18600F782BB /* MatrixTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixTableViewCell.swift; sourceTree = "<group>"; };
 		1FE981E31E8ED18600F782BB /* MatrixTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatrixTableViewCell.xib; sourceTree = "<group>"; };
-		27DD5AE6AC226E486FE65C95 /* Pods-MultiMatrix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiMatrix.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiMatrix/Pods-MultiMatrix.release.xcconfig"; sourceTree = "<group>"; };
-		3562A9D20B8764D66F254092 /* Pods_MultiMatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiMatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B7AB6CB43757EF3E5FF3344 /* Pods-MultiMatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiMatrix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiMatrix/Pods-MultiMatrix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03E6638975E072D7F54EFA8 /* Pods_MultiMatrix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +73,6 @@
 			children = (
 				1FE981C01E8EC40500F782BB /* MultiMatrix */,
 				1FE981BF1E8EC40500F782BB /* Products */,
-				509F80EEE5B48D1CDD0FF156 /* Pods */,
-				2AE99F1968BD9D8F5EB41160 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,23 +126,6 @@
 				1FE981E31E8ED18600F782BB /* MatrixTableViewCell.xib */,
 			);
 			name = MatrixDimensionsTableViewController;
-			sourceTree = "<group>";
-		};
-		2AE99F1968BD9D8F5EB41160 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3562A9D20B8764D66F254092 /* Pods_MultiMatrix.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		509F80EEE5B48D1CDD0FF156 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7B7AB6CB43757EF3E5FF3344 /* Pods-MultiMatrix.debug.xcconfig */,
-				27DD5AE6AC226E486FE65C95 /* Pods-MultiMatrix.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiMatrix/Pods-MultiMatrix-resources.sh\"\n";
+			shellScript = "";
 			showEnvVarsInLog = 0;
 		};
 		4AA90CF6C2ABEA8E4D15A1D4 /* [CP] Embed Pods Frameworks */ = {
@@ -256,7 +232,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiMatrix/Pods-MultiMatrix-frameworks.sh\"\n";
+			shellScript = "";
 			showEnvVarsInLog = 0;
 		};
 		BCE9DE5D32493E2C0874007B /* [CP] Check Pods Manifest.lock */ = {
@@ -271,7 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -405,7 +381,6 @@
 		};
 		1FE981D11E8EC40500F782BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B7AB6CB43757EF3E5FF3344 /* Pods-MultiMatrix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z5R2JEMGS2;
@@ -419,7 +394,6 @@
 		};
 		1FE981D21E8EC40500F782BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27DD5AE6AC226E486FE65C95 /* Pods-MultiMatrix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z5R2JEMGS2;

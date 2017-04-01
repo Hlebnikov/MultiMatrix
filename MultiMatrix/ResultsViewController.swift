@@ -24,11 +24,19 @@ class ResultsViewController: UIViewController {
     
     func printResults(_ resultTable: [[Int]]) {
         let c = dimensions!.count
-        println("T= \(resultTable[0][c-1]) \n")
+        println("T= \(resultTable[0][c-1])")
+        println("=========")
+        for i in 1..<c {
+            for p in 0..<c-i {
+                let k = p+i
+                println("M\(p+1)*M\(k+1) = \(resultTable[p][k])")
+            }
+            println("")
+        }
     }
     
     func println(_ string: String) {
-        textView.text.append(string)
+        textView.text.append(string + "\n")
     }
 
 

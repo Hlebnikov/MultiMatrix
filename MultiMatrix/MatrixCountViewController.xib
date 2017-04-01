@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRR-Uw-KWn">
-                    <rect key="frame" x="27.5" y="225" width="320" height="216"/>
+                    <rect key="frame" x="28" y="225" width="320" height="216"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="216" id="Uag-k0-aqO"/>
                     </constraints>
@@ -33,9 +33,8 @@
                         <action selector="onNext:" destination="-1" eventType="touchUpInside" id="v77-YC-7HA"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Выберите количество матриц" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Aa-qO-g4W">
-                    <rect key="frame" x="16" y="20" width="343" height="197"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите количество матриц" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Aa-qO-g4W">
+                    <rect key="frame" x="57" y="20" width="261" height="197"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -43,9 +42,12 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="8Aa-qO-g4W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="AdC-Xb-Oa6"/>
                 <constraint firstAttribute="bottom" secondItem="wmV-Pw-PbZ" secondAttribute="bottom" constant="20" id="FKF-Xe-fOQ"/>
+                <constraint firstItem="8Aa-qO-g4W" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FuN-Au-uxD"/>
                 <constraint firstItem="PRR-Uw-KWn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GJO-dy-xJL"/>
                 <constraint firstItem="wmV-Pw-PbZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HRZ-pp-wFc"/>
+                <constraint firstItem="PRR-Uw-KWn" firstAttribute="top" secondItem="8Aa-qO-g4W" secondAttribute="bottom" constant="8" id="SFm-Xa-UB9"/>
                 <constraint firstItem="PRR-Uw-KWn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pgQ-UR-HgS"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="53.5"/>
